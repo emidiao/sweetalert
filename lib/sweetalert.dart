@@ -266,6 +266,7 @@ abstract class SweetAlert {
       {Curve curve,
       String title,
       String subtitle,
+      Widget child,
       bool showCancelButton: false,
       SweetAlertOnPress onPress,
       Color cancelButtonColor,
@@ -276,6 +277,7 @@ abstract class SweetAlert {
     SweetAlertOptions options =  new SweetAlertOptions(
         showCancelButton: showCancelButton,
         title: title,
+        child: child,
         subtitle: subtitle,
         style: style,
         onPress: onPress,
