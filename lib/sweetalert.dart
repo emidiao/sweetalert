@@ -9,7 +9,7 @@ import 'package:sweetalert/src/success.dart';
 
 
 /// Return false to keey dialog showing
-typedef bool SweetAlertOnPress(bool isConfirm);
+typedef Future<bool> SweetAlertOnPress(bool isConfirm);
 
 enum SweetAlertStyle { success, error, confirm, loading }
 
