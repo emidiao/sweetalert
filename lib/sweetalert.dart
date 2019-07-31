@@ -104,16 +104,16 @@ class SweetAlertDialogState extends State<SweetAlertDialog>
     super.didUpdateWidget(oldWidget);
   }
 
-  void confirm() {
-    if (_options.onPress != null && _options.onPress(true) == false)
+  void confirm() async{
+    if (_options.onPress != null && await _options.onPress(true) == false)
       return;
     Navigator.pop(context);
   }
 
 
 
-  void cancel() {
-    if (_options.onPress != null && _options.onPress(false) == false)
+  void cancel() async{
+    if (_options.onPress != null && await _options.onPress(false) == false)
       return;
     Navigator.pop(context);
   }
