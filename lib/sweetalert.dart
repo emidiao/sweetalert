@@ -45,6 +45,7 @@ class SweetAlertOptions {
       {this.showCancelButton: false,
       this.title,
       this.subtitle,
+      this.child,
       this.onPress,
       this.cancelButtonColor,
       this.cancelButtonText,
