@@ -16,6 +16,7 @@ enum SweetAlertStyle { success, error, confirm, loading }
 class SweetAlertOptions {
   final String title;
   final String subtitle;
+  final Widget child;
 
   final SweetAlertOnPress onPress;
 
@@ -200,6 +201,7 @@ class SweetAlertDialogState extends State<SweetAlertDialog>
             ],
           ),
         ));
+         listOfChildren.add(child);
       } else {
         listOfChildren.add(new Padding(
           padding: new EdgeInsets.only(top: 10.0),
@@ -212,6 +214,7 @@ class SweetAlertDialogState extends State<SweetAlertDialog>
             ),
           ),
         ));
+        listOfChildren.add(child);
       }
     }
 
