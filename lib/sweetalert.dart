@@ -202,7 +202,7 @@ class SweetAlertDialogState extends State<SweetAlertDialog>
             ],
           ),
         ));
-         listOfChildren.add(child);
+         listOfChildren.add(_options.child);
       } else {
         listOfChildren.add(new Padding(
           padding: new EdgeInsets.only(top: 10.0),
@@ -215,7 +215,7 @@ class SweetAlertDialogState extends State<SweetAlertDialog>
             ),
           ),
         ));
-        listOfChildren.add(child);
+        listOfChildren.add(_options.child);
       }
     }
 
